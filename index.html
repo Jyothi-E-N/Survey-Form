@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Case Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body">
+    <div class="container-fluid bg">
+        <h1 id="title" class="text-primary pt-5 text-center" style="font-family: 'Roboto Slab';">PhoneCase Survey Form</h1>
+        <p id="description" class="text-center text-dark">Thank you for taking the time to help us improve the platform</p>
+        <br>
+        <form id="survey-form" action="" class="container-fluid bg-white py-5 rounded shadow-lg was-validated needs-validation" style="max-width: 800px;">
+            <div class="form-group">
+                <div class="input-group-sm mb-3">
+                    <label for="name" class="input-group-label text-primary" id="name-label">Name</label>
+                    <input type="text" class="form-control mt-1" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group-sm mb-3">
+                    <label for="email" class="input-group-label text-primary" id="email-label">Email</label>
+                    <input type="email" class="form-control mt-1" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group-sm mb-3">
+                    <label for="number" class="input-group-label text-primary" id="number-label">Age</label>
+                    <input type="number" class="form-control mt-1" id="number" placeholder="Enter your age" max="100" min="0" required>
+                </div>
+                <div class="input-group-sm mb-3">
+                    <label for="city" class="input-group-label text-primary">City</label>
+                    <select name="city" id="dropdown" class="custom-select mt-1" required>
+                        <option disabled selected value>Select your city</option>
+                        <option value="Raichur">Raichur</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Mysore">Mysore</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <p class="text-primary">Do you prefer thin or thick mobile phone cases?</p>
+            <div class="form-check-inline form-check ml-3 mb-3">
+                <input type="radio" name="prefer" id="thin" value="option1" class="form-check-input" required>
+                <label for="thin" class="text-dark form-check-label">Thin</label>
+            </div>
+            <div class="form-check-inline form-check ml-3">
+                <input type="radio" class="form-check-input" id="thick" value="option2" name="prefer" required>
+                <label for="thick" class="form-check-label text-dark">Thick</label>
+            </div>
+            <div class="form-check-inline form-check ml-3">
+                <input type="radio" name="prefer" id="anything" class="form-check-input" value="option3">
+                <label for="anything" class="text-dark form-check-label">Anything</label>
+            </div>
+            <br>
+            <br>
+            <p class="text-primary mb-3">What purpose did you buy your phone case for?</p>
+            <div class="form-check mt-2 ml-3">
+                <label for="fashion" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="fashion" value="fashion" name="purpose">Fashion
+                </label>
+            </div>
+            <div class="form-check mt-2 ml-3">
+                
+                <label for="protect" class="form-check-label">
+                    <input type="checkbox" name="purpose" id="protect"
+                    class="form-check-input" value="impact-protection">Impact Protection
+                </label>
+            </div>
+            <div class="form-check mt-2 ml-3">
+                <label for="proof" class="form-check-label">
+                    <input type="checkbox" name="purpose" id="proof"
+                    class="form-check-input" value="water-proof">
+                    Water Proof
+                </label>
+            </div>
+            <div class="form-check mt-2 ml-3">
+                <label for="audio" class="form-check-label">
+                    <input type="checkbox" name="purpose" id="audio"
+                    class="form-check-input" value="audio-enhancement">
+                    Audio Enhancement
+                </label>
+            </div>
+            <div class="form-check mt-2 ml-3">
+                <label for="guard" class="form-check-label">
+                    <input type="checkbox" name="purpose" id="guard"
+                    class="form-check-input" value="screen-guard">
+                    Built-in Screen Guard
+                </label>
+            </div>
+            <div class="form-check mt-2 ml-3">
+                <label for="storage" class="form-check-label">
+                    <input type="checkbox" name="purpose" id="storage"
+                    class="form-check-input" value="storage">
+                    Additional Strorage
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <p class="text-primary">Any comments or suggestions?</p>
+                <textarea name="para" id="para" rows="3" cols="60" placeholder="Enter comments here . . ." class="form-control"></textarea>
+            </div>
+            <div class="text-center"> 
+                <button id="submit" class="btn btn-primary w-75 mt-3">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
