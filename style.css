@@ -16,7 +16,7 @@ font-family: 'Roboto Slab', serif;
     left:0; right: 0;top:0;bottom:0;
     width: 100%;
     height: 100%;
-    background-image: url("https://pixabay.com/get/gc70f016463ce0f4b9cfd1d562d1425dbeff1cb30c39a7045e2cae739f09f4dc96b88c4ca29290a6c2a93f75a62f346d3_1920.jpg");
+    background-image: url("casings.jpg");
     opacity: 0.42;
     z-index:-1;
 }
